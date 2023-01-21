@@ -1,0 +1,80 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ws.groupeisi.com">
+    <xs:element name="getClientRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+                <xs:element name="idCompte" type="xs:int" />
+                <xs:element name="solde" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getClientResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="getClientResponse" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPaiementRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="beneficiaire" type="xs:int" />
+                <xs:element name="montant" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPaiementResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="getPaiementResponse" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getTransfertRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sender" type="xs:int" />
+                <xs:element name="recever" type="xs:int" />
+                <xs:element name="montant" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getTransfertResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="getTransfertResponse" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="soldeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="solde" type="xs:int" />
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getSoldeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="getSoldeResponse" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getInputRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="input" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getInfoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="outpup" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
